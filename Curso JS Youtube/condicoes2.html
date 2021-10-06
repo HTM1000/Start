@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Paises</title>
+    <style>
+         body {
+        font: normal 18pt Times;
+    }
+    input {
+        font: normal 18pt Times;
+        width: 100px;
+    }
+    div#res {
+        margin-top: 20px;
+    }
+
+
+    </style>
+</head>
+<h1>Sistema de Paises</h1>
+
+<body>
+    Qual seu pais de origem? <input type="string" name="txtpais" id="txtpais">
+    <input type="buttom" value="Verificar" onclick="Nacionalidade()">    
+    
+    <div id="res">
+
+    
+    </div>
+    <script>
+        
+        function Nacionalidade(){
+            let txtP = window.document.getElementById("txtpais");
+            let res = window.document.getElementById("res")
+            var Pais = txtP.value;
+            res.innerHTML = `Voce reside no/a <b>${Pais}</b>`
+            if(Pais == 'Brasil'){
+                res.innerHTML += `<p>Voce é <b>Brasileiro/a</b></p>`
+            } else {
+                res.innerHTML += `<p>Voce é <b>Estrangeiro/a</b></p>`
+            }
+            
+           
+        }
+
+
+    </script>
+</body>
+</html>

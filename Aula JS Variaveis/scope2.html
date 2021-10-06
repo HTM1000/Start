@@ -1,0 +1,21 @@
+<script>
+    // const e let sao locais e só funcionanm no espaço onde foram criados
+
+    //console.log("existe y antes do bloco? ", y) por let nao ser uma variavel global nao ocorre o hoisting gerando erro
+
+    let y = 2
+    const x = 3
+
+    {
+        //console.log("existe y? ", y) existe porem indefinido, ainda nao há valor atribuido
+        let y = 0 //sem indentificacao do let irá atualizar o y
+        console.log("existe y? ", y) // 200 ok!
+
+        const x = 4 //deve criar outra const dentro do scopo tornando o X diferente do scopo anterior
+        console.log("existe x?", x) //resultado será 4
+    }
+    
+    console.log("existe y depois do bloco? ", y) // erro, o let so funciona dentro do bloco, nao funciona globalmente
+    console.log("existe x depois do bloco?", x) // resultado será 3
+
+</script>
