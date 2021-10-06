@@ -1,0 +1,17 @@
+<datalist id="url-lista">
+    <option>http://meusite.com.br</option>
+    <option>http://meublog.com.br</option>
+</datalist>
+<form action="">
+    <input type="url"
+    placeholder="http://exemplo.com"
+    required
+    minlength="10"
+    maxlength="255"
+    size="70"
+    pattern=".*\.com\.br.*"
+    title="Somente dominios .com.br"
+    list="url-lista"
+    spellcheck="true">
+    <button type="submit">Enviar</button>
+</form>
