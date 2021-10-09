@@ -1,0 +1,22 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "estudo gerais computacao",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henriquemoraca/Start.git"
+  },
+  "author": "Henrique Moraca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henriquemoraca/Start/issues"
+  },
+  "homepage": "https://github.com/henriquemoraca/Start#readme",
+  "dependencies": {
+    "cfonts": "^2.10.0"
+  }
+}
